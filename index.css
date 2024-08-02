@@ -1,0 +1,134 @@
+body{
+    background-color: rgb(201, 198, 204);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: 0px 0px 4px #6e6d6d;
+}
+
+.sub-container01 {
+    background-image: url(./img/loginwallpaper.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+.sub-container01 img {
+    width: 20px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.sub-container01 h1{
+    color: #fff;
+    margin-top: 120px;
+    font-weight: bolder;
+    font-size: 50px;
+    padding-left: 30px;
+}
+
+.sub-container02 {
+    background-color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #888181;
+    font-size: 14px;
+}
+
+.sub-container02 h3 {
+    background: none;
+    margin-top: 50px;
+    font-size: 30px;
+    color: #000;
+}
+
+.sub-container02 input {
+    width: 290px;
+    height: 20px;
+    border: 1px solid #888181;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+.user-checkbox-container {
+    background-color: #fff;
+    width: 70%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.user-checkbox-container input {
+    width: 13px;
+    height: 13px;
+    background: none;
+}
+
+.user-checkbox-container input[type="checkbox"] {
+    accent-color: rgb(159, 39, 153);
+}
+
+.sub-container02 button {
+    width: 310px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    background-color: rgb(77, 35, 153);
+}
+
+.sub-container02 button:hover {
+    background-color: rgb(110, 75, 177);
+}
+
+.sub-container02 a{
+    text-decoration: none;
+    color: rgb(77, 35,153);
+    font-size: 17px;
+}
+
+@media(max-width : 1000px){
+    .user-checkbox-container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .user-checkbox-container{
+        width: 60%;
+    }
+}
+
+@media(max-width : 450px) {
+    .container{
+        margin: 0px;
+    }
+}
+
+@media (max-width:750px) {
+    .user-checkbox-container{
+        width: 70%;
+    }
+}
+
+@media (max-width : 500px) {
+    .user-checkbox-container{
+        width: 98%;
+}
+}
+
